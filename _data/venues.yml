@@ -8,7 +8,18 @@
 "Vision":
   color: "#009f36"
 
+
+
+
+
 "IEEE TPAMI":
 
+"IEEE TNNLS":
+
+"NeuroImage":
+
 "MICCAI":
+  color: "#009f36"
+
+"CIKM":
   color: "#009f36"
