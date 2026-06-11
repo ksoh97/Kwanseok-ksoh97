@@ -32,3 +32,11 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"oh":
+  - firstname: ["Oh", "K.", "Kwanseok Oh"]
+    url: https://scholar.google.com/citations?user=EMYHaHUAAAAJ&hl=ko
+
+"suk":
+  - firstname: ["Suk", "H.-I.", "Heung-Il Suk"]
+    url: https://scholar.google.com/citations?user=dl_oZLwAAAAJ&hl=ko
