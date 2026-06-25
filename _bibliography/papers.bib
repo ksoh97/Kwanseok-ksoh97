@@ -11,21 +11,31 @@ volume={112},
 number={10},
 pages={1583-1609},
 additional_info   = {. JCR-IF: 23.2, Engineering, Electrical & Electronic 2/353},
-# google_scholar_id = {RHpTSmoSYBkC},
 pdf = {https://ieeexplore.ieee.org/document/10780969},
 keywords={Data models;Brain modeling;Medical services;Predictive models;Medical diagnostic imaging;Analytical models;Magnetic resonance imaging;Deep learning;Biomedical imaging;Image analysis;Training data;Deep learning (DL);domain generalization (DG);medical image analysis (MedIA);out-of-distribution (OOD)},
 abstract = {Medical image analysis (MedIA) has become an essential tool in medicine and healthcare, aiding in disease diagnosis, prognosis, and treatment planning, and recent successes in deep learning (DL) have made significant contributions to its advances. However, deploying DL models for MedIA in real-world situations remains challenging due to their failure to generalize across the distributional gap between training and testing samples—a problem known as domain shift. Researchers have dedicated their efforts to developing various DL methods to adapt and perform robustly on unknown and out-of-distribution (OOD) data distributions. This article comprehensively reviews domain generalization (DG) studies specifically tailored for MedIA. We provide a holistic view of how DG techniques interact within the broader MedIA system, going beyond methodologies to consider the operational implications on the entire MedIA workflow. Specifically, we categorize DG methods into data-level, feature-level, model-level, and analysis-level methods. We show how those methods can be used in various stages of the MedIA workflow with DL equipped from data acquisition to model prediction and analysis. Furthermore, we critically analyze the strengths and weaknesses of various methods, unveiling future research opportunities.},
 doi={10.1109/JPROC.2024.3507831}}
 
-@article{lee2026hiram,
+@inproceedings{lee2026hiram,
 abbr = {MICCAI},
-title = {Hierarchical Region-Aware Multi-Granularity Mamba for White Matter Lesion Segmentation},
-journal = {29th International Conference on Medical Image Computing and Computer Assisted Intervention},
 author = {Dahye Lee and Kwanseok Oh†},
 annotation = {†: Corresponding author.},
-keywords = {Ultrahigh-Field MRI, Knowledge transfer, Adaptive fusion, Brain tissue & whole brain segmentation},
+title = {Hierarchical Region-Aware Multi-Granularity Mamba for White Matter Lesion Segmentation},
+year = {2026},
+isbn = {9798400701245},
+pdf = {https://dl.acm.org/doi/10.1145/3583780.3615183},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3583780.3615183},
+doi = {10.1145/3583780.3615183},
 abstract = {Accurate white matter (WM) lesion segmentation is essential for diagnosing and monitoring neurological disorders such as white matter hyperintensities and multiple sclerosis. However, this task remains highly challenging owing to the small and spatially scattered nature of lesions and their low contrast with surrounding tissues. Recently, the Segment Anything Model (SAM) and its medical variants, often augmented with CNNs or Mamba, have shown promising potential for medical image segmentation, yet they struggle to reliably capture subtle lesion patterns and indistinct boundaries that demand fine-grained regional discrimination. In this work, we propose a novel Hierarchical Region-Aware Multi-Granularity Mamba (HiRAM) incorporated into the SAM decoder. HiRAM explicitly decomposes the features into region-specific representations (i.e., interior, boundary, and background regions) and performs confidence-driven, non-causal state-space propagation. By incorporating region-aware modeling that prioritizes semantically reliable features and hierarchically integrates multi-granularity learning, our method enhances boundary sensitivity and fine-grained lesion delineation while preserving global contextual consistency. Comprehensive evaluations across two public challenge datasets reveal that HiRAM outperforms state-of-the-art methods, achieving unmatched segmentation accuracy and robustness.},
 preview = {HiRAM-overview.png},
+booktitle = {29th International Conference on Medical Image Computing and Computer Assisted Intervention},
+pages = {4165–4169},
+numpages = {5},
+keywords = {WM Lesion Segmentation, Segment Anything, Mamba},
+location = {Birmingham, United Kingdom},
+series = {MICCAI '26},
 selected = {true}
 }
 
@@ -45,7 +55,6 @@ keywords = {Ultrahigh-Field MRI, Knowledge transfer, Adaptive fusion, Brain tiss
 abstract = {Ultrahigh-field (UHF) magnetic resonance imaging (MRI), 7T MRI, provides superior anatomical details of internal brain structures thanks to its enhanced signal-to-noise ratio and susceptibility-induced contrast. However, the widespread use of 7T MRI is limited by its high cost and lower accessibility compared to low-field (LF) MRI. This study proposes a SegUHF that systematically fuses the input LF MRI feature representations with the inferred 7T-like feature representations for brain image segmentation tasks in a 7T-absent environment. Specifically, our proposed adaptive fusion module within the SegUHF aggregates 7T-like features derived from the LF image using a pre-trained network and then refines them to effectively assimilate UHF guidance into LF image features. Using intensity-guided features obtained from such aggregation and assimilation, segmentation models can recognize subtle structural representations that are usually difficult to identify when relying only on LF features. Beyond these advantages, this strategy can be seamlessly utilized by modulating the contrast of LF features in alignment with UHF guidance, even when employing arbitrary segmentation models. Extensive experiments demonstrated that our method outperformed all baselines in both brain tissue and whole-brain segmentation, while also showcasing adaptability and scalability across various models and tasks. Code is available at https://github.com/ku-milab/UHF-guided_segmentation},
 preview = {fusion_module2.png},
 pdf = {https://www.sciencedirect.com/science/article/pii/S0031320326003298},
-# google_scholar_id = {JV2RwH3_ST0C},
 selected = {true}
 }
 
@@ -61,7 +70,6 @@ selected = {true}
   pages={1063-1077},
   pdf={https://ieeexplore.ieee.org/document/11224002},
   preview = {FIESTA-overview.png},
-  # google_scholar_id = {TQgYirikUcIC},
   abstract = {Single-source domain generalization (SDG) in medical image segmentation (MIS) aims to generalize a model using only one source domain data to segment data from an unseen target domain. Despite substantial advances in SDG with data augmentation, existing methods often fail to fully consider the details and uncertain areas prevalent in MIS, leading to mis-segmentation. In this study, we propose a Fourier-based semantic augmentation method called FIESTA using uncertainty guidance (UG) to enhance the fundamental goals of MIS in an SDG context by manipulating the amplitude and phase components in the frequency domain. The proposed Fourier augmentative transformer (FAT) addresses semantic amplitude modulation based on meaningful angular points to induce pertinent variations and harnesses the phase spectrum to ensure structural coherence. Moreover, FIESTA employs uncertainty estimation to fine-tune the augmentation process, improving the ability of the model to adapt to diverse augmented data and concentrate on areas with higher ambiguity. Extensive experiments across three cross-domain scenarios demonstrate that FIESTA surpasses recent state-of-the-art SDG approaches in segmentation performance and significantly contributes to boosting the model’s applicability in medical imaging modalities.},
   keywords={Image segmentation;Magnetic resonance imaging;Semantics;Computed tomography;Fats;Biomedical imaging;Uncertainty;Data models;Adaptation models;Training;Fourier-based semantic augmentation;medical image segmentation (MIS);single-source domain generalization (SDG);uncertainty guidance (UG)},
   doi={10.1109/TNNLS.2025.3620853},
@@ -84,7 +92,6 @@ keywords = {Alzheimer’s disease, Counterfactual reasoning, Quantitative featur
 abstract = {Deep learning (DL) for predicting Alzheimer’s disease (AD) has provided timely intervention in disease progression yet still demands attentive interpretability to explain how their DL models make definitive decisions. Counterfactual reasoning has recently gained increasing attention in medical research because of its ability to provide a refined visual explanatory map. However, such visual explanatory maps based on visual inspection alone are insufficient unless we intuitively demonstrate their medical or neuroscientific validity via quantitative features. In this study, we synthesize the counterfactual-labeled structural MRIs using our proposed framework and transform it into a gray matter density map to measure its volumetric changes over the parcellated region of interest (ROI). We also devised a lightweight linear classifier to boost the effectiveness of constructed ROIs, promoted quantitative interpretation, and achieved comparable predictive performance to DL methods. Throughout this, our framework produces an “AD-relatedness index” for each ROI. It offers an intuitive understanding of brain status for an individual patient and across patient groups concerning AD progression.},
 preview = {LiCoL-overview.png},
 pdf = {https://www.sciencedirect.com/science/article/pii/S1053811925000795},
-# google_scholar_id = {qUcmZB5y_30C},
 selected = {true}
 }
 
@@ -102,7 +109,6 @@ pdf = {https://ieeexplore.ieee.org/iel7/34/4359286/09854196.pdf?casa_token=cpNzk
 issn = {0162-8828},
 url = {https://doi.org/10.1109/TPAMI.2022.3197845},
 doi = {10.1109/TPAMI.2022.3197845},
-# google_scholar_id = {blknAaTinKkC},
 abstract = {Existing studies on disease diagnostic models focus either on diagnostic model learning for performance improvement or on the visual explanation of a trained diagnostic model. We propose a novel learn-explain-reinforce (LEAR) framework that unifies diagnostic model learning, visual explanation generation (explanation unit), and trained diagnostic model reinforcement (reinforcement unit) guided by the visual explanation. For the visual explanation, we generate a counterfactual map that transforms an input sample to be identified as an intended target label. For example, a counterfactual map can localize hypothetical abnormalities within a normal brain image that may cause it to be diagnosed with Alzheimer's disease (AD). We believe that the generated counterfactual maps represent data-driven knowledge about a target task, i.e., AD diagnosis using structural MRI, which can be a vital source of information to reinforce the generalization of the trained diagnostic model. To this end, we devise an attention-based feature refinement module with the guidance of the counterfactual maps. The explanation and reinforcement units are reciprocal and can be operated iteratively. Our proposed approach was validated via qualitative and quantitative analysis on the ADNI dataset. Its comprehensibility and fidelity were demonstrated through ablation studies and comparisons with existing methods.},
 journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
 additional_info   = {. JCR-IF: 24.314, Computer Science & Artificial Intelligence: 2/144},
@@ -125,7 +131,6 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3583780.3615183},
 doi = {10.1145/3583780.3615183},
-# google_scholar_id = {ZeXyd9-uunAC},
 abstract = {Face age transformation aims to convert reference images into synthesized images so that they portray the specified target ages. The crux of this task is to change only age-related areas of the given image while maintaining the age-irrelevant areas unchanged. Nevertheless, a common limitation among most existing models is the struggle to generate high-quality aging images that effectively consider both crucial properties. To address this problem, we propose a novel GAN-based face-aging framework that utilizes age-aware Guidance via Masking-Based Attention (GMBA). Specifically, we devise an age-aware guidance module to adjust age-relevant and age-irrelevant attributes within the image seamlessly. By virtue of its capability, it enables the model to produce realistic age-transformed images that certainly preserve the input's identities while delicately imposing age-related properties. Experimental results show that our proposed GMBA outperformed other state-of-the-art methods in terms of identity preservation and accurate age conversion, as well as providing superior visual quality for age-transformed images.},
 booktitle = {Proceedings of the 32nd ACM International Conference on Information and Knowledge Management},
 pages = {4165–4169},
@@ -136,117 +141,4 @@ series = {CIKM '23},
 annotation = {*: Both authors equally contributed to this work.},
 preview = {GMBA-overview.png},
 selected = {true}
-}
-
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  # selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
-
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
 }
