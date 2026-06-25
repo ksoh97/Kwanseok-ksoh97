@@ -27,5 +27,18 @@
 "CIKM":
   color: "#009f36"
 
+"IEEE ISBI":
+  color: "#009f36"
+
 "ACPR":
   color: "#009f36"
+
+
+"ISMRM":
+  color: "#bdb000"
+
+"RSNA":
+  color: "#bdb000"
+
+"ESNR":
+  color: "#bdb000"
