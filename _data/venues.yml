@@ -10,8 +10,6 @@
 
 
 
-
-
 "IEEE TPAMI":
 
 "IEEE TNNLS":
@@ -21,8 +19,13 @@
 "arXiv":
   color: "#00369f"
 
+
+
 "MICCAI":
   color: "#009f36"
 
 "CIKM":
+  color: "#009f36"
+
+"ACPR":
   color: "#009f36"
