@@ -33,10 +33,22 @@
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
 
-"oh":
-  - firstname: ["Oh", "K.", "Kwanseok Oh"]
-    url: https://scholar.google.com/citations?user=EMYHaHUAAAAJ&hl=ko
 
-"suk":
-  - firstname: ["Suk", "H.-I.", "Heung-Il Suk"]
-    url: https://scholar.google.com/citations?user=dl_oZLwAAAAJ&hl=ko
+"Suk":
+  - firstname: ["Heung-Il", "H.-I."]
+    url: https://scholar.google.co.kr/citations?user=dl_oZLwAAAAJ&hl=ko
+"Yoon":
+  - firstname: ["Jee Seok", "J. S."]
+    url: https://scholar.google.co.kr/citations?user=YjaJ5qQAAAAJ&hl=ko
+"Jeon":
+  - firstname: ["Eunjin", "E."]
+    url: https://scholar.google.co.kr/citations?user=U_hg5B0AAAAJ&hl=ko
+"Heo":
+  - firstname: ["Da-Woon"]
+    url: https://scholar.google.co.kr/citations?user=WapMdZ8AAAAJ&hl=ko
+"Lee":
+  - firstname: ["Jieun"]
+    url: https://scholar.google.co.kr/citations?user=RV0DwyEAAAAJ&hl=ko
+"Maeng":
+  - firstname: ["Junyeong"]
+    url: https://scholar.google.co.kr/citations?user=8yuRvWMAAAAJ&hl=ko
