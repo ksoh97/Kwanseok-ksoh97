@@ -18,8 +18,11 @@
 
 "NeuroImage":
 
-"MICCAI":
+"arXiv":
   color: "#00369f"
+
+"MICCAI":
+  color: "#009f36"
 
 "CIKM":
   color: "#009f36"
