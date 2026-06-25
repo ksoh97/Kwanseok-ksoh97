@@ -7,6 +7,8 @@
   author={Oh, Kwanseok and Lee, Dahye and Suk, Heung-Il},
   journal={arXiv},
   preview = {dreamsam-overview.png},
+  bibtex_show = {true},
+  code = {https://github.com/ksoh97/DReAM-SAM},
   abstract = {The Segment Anything Model (SAM) has shown unprecedented zero-shot segmentation capabilities across general visual domains. However, its effectiveness in Medical Image Segmentation (MIS) remains significantly constrained, particularly when dealing with small or ill-defined shapes, and low-contrast regions with ambiguous boundaries, owing to insufficient modeling of local context and a lack of awareness of surrounding anatomical relationships. In this paper, we propose Dynamic Region-Adaptive Modulated SAM (DReAM-SAM), a novel framework designed to enhance SAM’s spatial adaptability and fidelity for fine-grained MIS. Our framework introduces three key technical pillars: (1) Dynamically Adaptive Modulation: We integrate an agile CNN branch to complement SAM’s encoder, which enforces fine structural details and boundary-sensitive localization via dynamically adaptive feature modulation across regions. (2) Bidirectional Feature Unification: We develop a reciprocal neighborhood attention to facilitate mutual reinforcement between two feature streams. (3) Self-Prompting Mechanism: To eliminate the manual or explicit prompt intervention inherent in SAM’s original design, we devise a self-prompting strategy that autonomously derives spatially semantic prompts from model-inferred target cues. Extensive experiments across diverse medical modalities and datasets reveal that DReAM-SAM outperforms state-of-the-art SAM variants and task-specific MIS models.},
   year={2026}
 }
@@ -20,6 +22,7 @@
   pages={2026--05},
   year={2026},
   preview = {TopBrain-overview.png},
+  bibtex_show = {true},
   annotation = {Contributing author, TopBrain Segmentation Challenge, as a top-ranked participant invited to co-author the official challenge benchmark paper.},
   abstract = {The Circle of Willis (CoW) is an important network of arteries connecting major circulations of the brain. Its vascular architecture is believed to affect the risk, severity, and clinical outcome of serious neurovascular diseases. However, characterizing the highly variable CoW anatomy is still a manual and time-consuming expert task. The CoW is usually imaged by two non-invasive angiographic imaging modalities, magnetic resonance angiography (MRA) and computed tomography angiography (CTA), but there exist limited datasets with annotations on CoW anatomy, especially for CTA. Therefore, we organized the TopCoW challenge with the release of an annotated CoW dataset. The TopCoW dataset is the first public dataset with voxel-level annotations for 13 CoW vessel components, enabled by virtual reality technology. It is also the first large dataset using 200 pairs of MRA and CTA from the same patients. As part of the benchmark, we invited submissions worldwide and attracted over 250 registered participants from six continents. The submissions were evaluated on both internal and external test datasets of 226 scans from over five centers. The top performing teams achieved over 90% Dice scores at segmenting the CoW components, over 80% F1 scores at detecting key CoW components, and over 70% balanced accuracy at classifying CoW variants for nearly all test sets. The best algorithms also showed clinical potential in classifying fetal-type posterior cerebral artery and locating aneurysms with CoW anatomy. TopCoW demonstrated the utility and versatility of CoW segmentation algorithms for a wide range of downstream clinical applications with explainability. The annotated datasets and best performing algorithms have been released as public Zenodo records to foster further methodological development and clinical tool building.},
   publisher={Cold Spring Harbor Laboratory Press}
@@ -32,6 +35,8 @@
   journal={arXiv preprint arXiv:2410.12827},
   pdf = {https://arxiv.org/abs/2410.12827},
   preview = {DyMix-overview.png},
+  code = {https://github.com/usxxng/DyMix},
+  bibtex_show = {true},
   abstract = {Advances in deep learning (DL)-based models for brain image analysis have significantly enhanced the accuracy of Alzheimer's disease (AD) diagnosis, allowing for more timely interventions. Despite these advancements, most current DL models suffer from performance degradation when inferring on unseen domain data owing to the variations in data distributions, a phenomenon known as domain shift. To address this challenge, we propose a novel approach called the dynamic frequency mixup scheduler (DyMix) for unsupervised domain adaptation. Contrary to the conventional mixup technique, which involves simple linear interpolations between predefined data points from the frequency space, our proposed DyMix dynamically adjusts the magnitude of the frequency regions being mixed from the source and target domains. Such an adaptive strategy optimizes the model's capacity to deal with domain variability, thereby enhancing its generalizability across the target domain. In addition, we incorporate additional strategies to further enforce the model's robustness against domain shifts, including leveraging amplitude-phase recombination to ensure resilience to intensity variations and applying self-adversarial learning to derive domain-invariant feature representations. Experimental results on two benchmark datasets quantitatively and qualitatively validated the effectiveness of our DyMix in that we demonstrated its outstanding performance in AD diagnosis compared to state-of-the-art methods.},
   year={2026}
 }
@@ -42,6 +47,8 @@
   author={Jo, Sangmin and Yoon, Jee Seok and Jeong, Wootaek and Oh, Kwanseok and Suk, Heung-Il},
   journal={arXiv preprint arXiv:2510.12070},
   pdf={https://arxiv.org/abs/2510.12070},
+  preview = {MEASURE-overview.png},
+  bibtex_show = {true},
   abstract = {Deep learning-based automatic sleep staging has significantly advanced in performance and plays a crucial role in the diagnosis of sleep disorders. However, those models often struggle to generalize on unseen subjects due to variability in physiological signals, resulting in degraded performance in out-of-distribution scenarios. To address this issue, domain generalization approaches have recently been studied to ensure generalized performance on unseen domains during training. Among those techniques, contrastive learning has proven its validity in learning domain-invariant features by aligning samples of the same class across different domains. Despite its potential, many existing methods are insufficient to extract adequately domain-invariant representations, as they do not explicitly address domain characteristics embedded within the unshared information across samples. In this paper, we posit that mitigating such domain-relevant attributes-referred to as excess domain-relevant information-is key to bridging the domain gap. However, the direct strategy to mitigate the domain-relevant attributes often overfits features at the high-level information, limiting their ability to leverage the diverse temporal and spectral information encoded in the multiple feature levels. To address these limitations, we propose a novel MEASURE (Multi-scalE minimAl SUfficient Representation lEarning) framework, which effectively reduces domain-relevant information while preserving essential temporal and spectral features for sleep stage classification. In our exhaustive experiments on publicly available sleep staging benchmark datasets, SleepEDF-20 and MASS, our proposed method consistently outperformed state-of-the-art methods.},
   year={2026}
 }
@@ -52,6 +59,7 @@
   author={Yang, Kaiyuan and Musio, Fabio and Ma, Yihui and Juchler, Norman and Paetzold, Johannes C and Al-Maskari, Rami and Höher, Luciano and Li, Hongwei Bran and Hamamci, Ibrahim Ethem and Sekuboyina, Anjany and Shit, Suprosanna and Huang, Houjing and Prabhakar, Chinmay and Rosa, Ezequiel de la and Wittmann, Bastian and Waldmannstetter, Diana and Kofler, Florian and Navarro, Fernando and Menten, Martin J and Ezhov, Ivan and Rueckert, Daniel and Vos, Iris N and Ruigrok, Ynte M and Velthuis, Birgitta K and Kuijf, Hugo J and Shi, Pengcheng and Liu, Wei and Ma, Ting and Rokuss, Maximilian R and Kirchhoff, Yannick and Isensee, Fabian and Maier-Hein, Klaus and Zhu, Chengcheng and Zhao, Huilin and Bijlenga, Philippe and Hämmerli, Julien and Wurster, Catherine and Westphal, Laura and Bisschop, Jeroen and Colombo, Elisa and Baazaoui, Hakim and Handelsmann, Hannah-Lea and Makmur, Andrew and Hallinan, James and Soundararajan, Amrish and Wiestler, Bene and Kirschke, Jan S and Wiest, Roland and Montagnon, Emmanuel and Letourneau-Guillon, Laurent and Oh, Kwanseok and Lee, Dahye and Aydin, Orhun Utku and Hilbert, Adam and Rieger, Jana and Rallios, Dimitrios and Tanioka, Satoru and Koch, Alexander and Frey, Dietmar and Qayyum, Abdul and Mazher, Moona and Niederer, Steven and Disch, Nico and Holzschuh, Julius and LaBella, Dominic and Galati, Francesco and Falcetta, Daniele and Zuluaga, Maria A and Lin, Chaolong and Zhao, Haoran and Zhang, Zehan and Zhang, Minghui and You, Xin and Zhang, Hanxiao and Yang, Guang-Zhong and Gu, Yun and Ra, Sinyoung and Hwang, Jongyun and Park, Hyunjin and Chen, Junqiang and Wodzinski, Marek and Müller, Henning and Mansouri, Nesrin and Autrusseau, Florent and Yalçin, Cansu and Hamadache, Rachika E and Lisazo, Clara and Salvi, Joaquim and Casamitjana, Adrià and Lladó, Xavier and Estrada, Uma Maria Lal-Trehan and Abramova, Valeriia and Giancardo, Luca and Oliver, Arnau and Casademunt, Paula and Galdran, Adrian and Delucchi, Matteo and Liu, Jialu and Huang, Haibin and Cui, Yue},
   journal={NEJM AI},
   preview = {Topcow-overview.png},
+  bibtex_show = {true},
   pdf={https://pmc.ncbi.nlm.nih.gov/articles/PMC10793481/pdf/nihpp-2312.17670v3.pdf},
   annotation = {Contributing author, Benchmarking the CoW with the TopCoW Challenge, as a top-ranked participant invited to co-author the official challenge benchmark paper.},
   abstract = {The Circle of Willis (CoW) is an important network of arteries connecting major circulations of the brain. Its vascular architecture is believed to affect the risk, severity, and clinical outcome of serious neurovascular diseases. However, characterizing the highly variable CoW anatomy is still a manual and time-consuming expert task. The CoW is usually imaged by two non-invasive angiographic imaging modalities, magnetic resonance angiography (MRA) and computed tomography angiography (CTA), but there exist limited datasets with annotations on CoW anatomy, especially for CTA. Therefore, we organized the TopCoW challenge with the release of an annotated CoW dataset. The TopCoW dataset is the first public dataset with voxel-level annotations for 13 CoW vessel components, enabled by virtual reality technology. It is also the first large dataset using 200 pairs of MRA and CTA from the same patients. As part of the benchmark, we invited submissions worldwide and attracted over 250 registered participants from six continents. The submissions were evaluated on both internal and external test datasets of 226 scans from over five centers. The top performing teams achieved over 90% Dice scores at segmenting the CoW components, over 80% F1 scores at detecting key CoW components, and over 70% balanced accuracy at classifying CoW variants for nearly all test sets. The best algorithms also showed clinical potential in classifying fetal-type posterior cerebral artery and locating aneurysms with CoW anatomy. TopCoW demonstrated the utility and versatility of CoW segmentation algorithms for a wide range of downstream clinical applications with explainability. The annotated datasets and best performing algorithms have been released as public Zenodo records to foster further methodological development and clinical tool building.},
@@ -68,6 +76,8 @@
   journal = {29th International Conference on Medical Image Computing and Computer Assisted Intervention},
   abstract = {Accurate white matter (WM) lesion segmentation is essential for diagnosing and monitoring neurological disorders such as white matter hyperintensities and multiple sclerosis. However, this task remains highly challenging owing to the small and spatially scattered nature of lesions and their low contrast with surrounding tissues. Recently, the Segment Anything Model (SAM) and its medical variants, often augmented with CNNs or Mamba, have shown promising potential for medical image segmentation, yet they struggle to reliably capture subtle lesion patterns and indistinct boundaries that demand fine-grained regional discrimination. In this work, we propose a novel Hierarchical Region-Aware Multi-Granularity Mamba (HiRAM) incorporated into the SAM decoder. HiRAM explicitly decomposes the features into region-specific representations (i.e., interior, boundary, and background regions) and performs confidence-driven, non-causal state-space propagation. By incorporating region-aware modeling that prioritizes semantically reliable features and hierarchically integrates multi-granularity learning, our method enhances boundary sensitivity and fine-grained lesion delineation while preserving global contextual consistency. Comprehensive evaluations across two public challenge datasets reveal that HiRAM outperforms state-of-the-art methods, achieving unmatched segmentation accuracy and robustness.},
   preview = {HiRAM-overview.png},
+  code = {https://github.com/ksoh97/HiRAM},
+  bibtex_show = {true},
   keywords = {WM Lesion Segmentation, Segment Anything, Mamba},
   location = {Strasbourg, France},
   year={2026}
@@ -89,6 +99,8 @@ author = {Kwanseok Oh and Jieun Lee and Da-Woon Heo and Dinggang Shen and Heung-
 keywords = {Ultrahigh-Field MRI, Knowledge transfer, Adaptive fusion, Brain tissue & whole brain segmentation},
 abstract = {Ultrahigh-field (UHF) magnetic resonance imaging (MRI), 7T MRI, provides superior anatomical details of internal brain structures thanks to its enhanced signal-to-noise ratio and susceptibility-induced contrast. However, the widespread use of 7T MRI is limited by its high cost and lower accessibility compared to low-field (LF) MRI. This study proposes a SegUHF that systematically fuses the input LF MRI feature representations with the inferred 7T-like feature representations for brain image segmentation tasks in a 7T-absent environment. Specifically, our proposed adaptive fusion module within the SegUHF aggregates 7T-like features derived from the LF image using a pre-trained network and then refines them to effectively assimilate UHF guidance into LF image features. Using intensity-guided features obtained from such aggregation and assimilation, segmentation models can recognize subtle structural representations that are usually difficult to identify when relying only on LF features. Beyond these advantages, this strategy can be seamlessly utilized by modulating the contrast of LF features in alignment with UHF guidance, even when employing arbitrary segmentation models. Extensive experiments demonstrated that our method outperformed all baselines in both brain tissue and whole-brain segmentation, while also showcasing adaptability and scalability across various models and tasks. Code is available at https://github.com/ku-milab/UHF-guided_segmentation},
 preview = {fusion_module2.png},
+code = {https://github.com/ksoh97/UHF-guided_segmentation},
+bibtex_show = {true},
 pdf = {https://www.sciencedirect.com/science/article/pii/S0031320326003298},
 selected = {true}
 }
@@ -105,6 +117,8 @@ selected = {true}
   pages={1063-1077},
   pdf={https://ieeexplore.ieee.org/document/11224002},
   preview = {FIESTA-overview.png},
+  code = {https://github.com/ksoh97/FIESTA},
+  bibtex_show = {true},
   abstract = {Single-source domain generalization (SDG) in medical image segmentation (MIS) aims to generalize a model using only one source domain data to segment data from an unseen target domain. Despite substantial advances in SDG with data augmentation, existing methods often fail to fully consider the details and uncertain areas prevalent in MIS, leading to mis-segmentation. In this study, we propose a Fourier-based semantic augmentation method called FIESTA using uncertainty guidance (UG) to enhance the fundamental goals of MIS in an SDG context by manipulating the amplitude and phase components in the frequency domain. The proposed Fourier augmentative transformer (FAT) addresses semantic amplitude modulation based on meaningful angular points to induce pertinent variations and harnesses the phase spectrum to ensure structural coherence. Moreover, FIESTA employs uncertainty estimation to fine-tune the augmentation process, improving the ability of the model to adapt to diverse augmented data and concentrate on areas with higher ambiguity. Extensive experiments across three cross-domain scenarios demonstrate that FIESTA surpasses recent state-of-the-art SDG approaches in segmentation performance and significantly contributes to boosting the model’s applicability in medical imaging modalities.},
   keywords={Image segmentation;Magnetic resonance imaging;Semantics;Computed tomography;Fats;Biomedical imaging;Uncertainty;Data models;Adaptation models;Training;Fourier-based semantic augmentation;medical image segmentation (MIS);single-source domain generalization (SDG);uncertainty guidance (UG)},
   doi={10.1109/TNNLS.2025.3620853},
@@ -122,6 +136,9 @@ selected = {true}
   pages={1-5},
   pdf = {https://ieeexplore.ieee.org/abstract/document/11515862},
   additional_info   = {. Oral presentation},
+  preview = {PATDIFF-overview.png},
+  code = {https://github.com/ku-milab/Pat-Diff},
+  bibtex_show = {true},
   keywords={Modeling;Positron emission tomography;Privacy enhancing technologies;Pathology;Magnetic resonance imaging;Diseases;Equations;Printing;Translation;Training;Alzheimer's disease;MRI-to-PET translation;Diffusion models;Pathology-aware generation},
   doi={10.1109/ISBI61048.2026.11515862}}
 
@@ -136,6 +153,8 @@ selected = {true}
   pages={1-5},
   pdf = {https://ieeexplore.ieee.org/abstract/document/11515975},
   additional_info   = {. Oral presentation},
+  preview = {SAMTXD-overview.png},
+  bibtex_show = {true},
   keywords={Modeling;Dies;Biomedical imaging;Noise reduction;Printing;Timing;Image segmentation;Equations;Training;Conferences;Medical image segmentation;diffusion model;vision-language model;foundation model},
   doi={10.1109/ISBI61048.2026.11515975}}
 
@@ -144,6 +163,8 @@ selected = {true}
   title={Fine-Tuned Segment Anything Model for Automatic Intracranial Aneurysm Segmentation in Time-of-Flight MR Angiography: Comparison with Non-Radiologist Physicians},
   author={Yi, Juyeon and Lee, Dahye and Cho, Honggeun and Oh, Kwanseok and Hwang, Bumcheol and Kim, Joon Young and Song, Minjin and Lee, Doo Young and Choi, Jin Wook and Choi, Hyun Seok},
   journal={Radiological Society of North America},
+  preview = {RSNA-overview.png},
+  bibtex_show = {true},
   year={2025}
 }
 
@@ -157,6 +178,9 @@ selected = {true}
   pages={103115},
   year={2025},
   pdf={https://www.sciencedirect.com/science/article/abs/pii/S0933365725000508},
+  preview = {idenbat-overview.png},
+  code = {https://github.com/ku-milab/IdenBAT},
+  bibtex_show = {true},
   abstract = {Brain age transformation aims to convert reference brain images into synthesized images that accurately reflect the age-specific features of a target age group. The primary objective of this task is to modify only the age-related attributes of the reference image while preserving all other age-irrelevant attributes. However, achieving this goal poses substantial challenges due to the inherent entanglement of various image attributes within features extracted from a backbone encoder, resulting in simultaneous alterations during image generation. To address this challenge, we propose a novel architecture that employs disentangled representation learning for identity-preserved brain age transformation, called IdenBAT. This approach facilitates the decomposition of image features, ensuring the preservation of individual traits while selectively transforming age-related characteristics to match those of the target age group. Through comprehensive experiments conducted on both 2D and full-size 3D brain datasets, our method adeptly converts input images to target age while retaining individual characteristics accurately. Furthermore, our approach demonstrates superiority over existing state-of-the-art regarding performance fidelity.},
   publisher={Elsevier}
 }
@@ -167,6 +191,8 @@ selected = {true}
   author={Oh, Kwanseok and Kim, Burnyoung and Lee, Dahye and Gho, Sung-Min},
   journal={European Society of Neuroradiology},
   additional_info   = {. Best Awarded Paper.},
+  preview = {ESNR-MRG-overview.png},
+  bibtex_show = {true},
   year={2025}
 }
 
@@ -175,6 +201,8 @@ selected = {true}
   title={Anatomy-Aware Segmentation of Cerebral Arteries for Automated Intracranial Aneurysm Localization on 3D Time-of-Flight Magnetic Resonance Angiography},
   author={Oh, Kwanseok and Lee, Dahye and Kim, Yun Heung and Kim, Burnyoung and Choi, Hyun Seok and Choi, Jin Wook},
   journal={European Society of Neuroradiology},
+  preview = {ESNR-Localizer-overview.png},
+  bibtex_show = {true},
   year={2025}
 }
 
@@ -183,6 +211,8 @@ selected = {true}
   title={Enhancing Robustness in Aneurysm Segmentation Across Variable Sizes via Context-Aware Semantic Augmentation},
   author={Oh, Kwanseok and Kim, Yun Heung and Kim, Burnyoung and Lee, Dahye and Choi, Hyun Seok and Choi, Jin Wook},
   journal={European Society of Neuroradiology},
+  preview = {ESNR-Aug-overview.png},
+  bibtex_show = {true},
   year={2025}
 }
 
@@ -202,6 +232,8 @@ author = {Kwanseok Oh and Da-Woon Heo and Ahmad Wisnu Mulyadi and Wonsik Jung an
 keywords = {Alzheimer’s disease, Counterfactual reasoning, Quantitative feature-based in-depth analysis, Counterfactual-guided attention},
 abstract = {Deep learning (DL) for predicting Alzheimer’s disease (AD) has provided timely intervention in disease progression yet still demands attentive interpretability to explain how their DL models make definitive decisions. Counterfactual reasoning has recently gained increasing attention in medical research because of its ability to provide a refined visual explanatory map. However, such visual explanatory maps based on visual inspection alone are insufficient unless we intuitively demonstrate their medical or neuroscientific validity via quantitative features. In this study, we synthesize the counterfactual-labeled structural MRIs using our proposed framework and transform it into a gray matter density map to measure its volumetric changes over the parcellated region of interest (ROI). We also devised a lightweight linear classifier to boost the effectiveness of constructed ROIs, promoted quantitative interpretation, and achieved comparable predictive performance to DL methods. Throughout this, our framework produces an “AD-relatedness index” for each ROI. It offers an intuitive understanding of brain status for an individual patient and across patient groups concerning AD progression.},
 preview = {LiCoL-overview.png},
+code = {https://github.com/ksoh97/LiCoL},
+bibtex_show = {true},
 pdf = {https://www.sciencedirect.com/science/article/pii/S1053811925000795},
 selected = {true}
 }
@@ -212,6 +244,8 @@ selected = {true}
   author={Oh, Kwanseok and Lee, Dahye and Gho, Sung-Min},
   journal={International Society for Magnetic Resonance in Medicine},
   additional_info   = {. Oral presentation},
+  preview = {ISMRM-overview.png},
+  bibtex_show = {true},
   year={2025}
 }
 
@@ -226,6 +260,8 @@ number={10},
 pages={1583-1609},
 additional_info   = {. JCR-IF: 23.2, Engineering, Electrical & Electronic 2/353},
 pdf = {https://ieeexplore.ieee.org/document/10780969},
+preview = {PIEEE_Cover-overview.png},
+bibtex_show = {true},
 keywords={Data models;Brain modeling;Medical services;Predictive models;Medical diagnostic imaging;Analytical models;Magnetic resonance imaging;Deep learning;Biomedical imaging;Image analysis;Training data;Deep learning (DL);domain generalization (DG);medical image analysis (MedIA);out-of-distribution (OOD)},
 abstract = {Medical image analysis (MedIA) has become an essential tool in medicine and healthcare, aiding in disease diagnosis, prognosis, and treatment planning, and recent successes in deep learning (DL) have made significant contributions to its advances. However, deploying DL models for MedIA in real-world situations remains challenging due to their failure to generalize across the distributional gap between training and testing samples—a problem known as domain shift. Researchers have dedicated their efforts to developing various DL methods to adapt and perform robustly on unknown and out-of-distribution (OOD) data distributions. This article comprehensively reviews domain generalization (DG) studies specifically tailored for MedIA. We provide a holistic view of how DG techniques interact within the broader MedIA system, going beyond methodologies to consider the operational implications on the entire MedIA workflow. Specifically, we categorize DG methods into data-level, feature-level, model-level, and analysis-level methods. We show how those methods can be used in various stages of the MedIA workflow with DL equipped from data acquisition to model prediction and analysis. Furthermore, we critically analyze the strengths and weaknesses of various methods, unveiling future research opportunities.},
 doi={10.1109/JPROC.2024.3507831}}
@@ -252,6 +288,8 @@ pages = {4843–4857},
 numpages = {15},
 annotation = {*: Both authors equally contributed to this work.},
 preview = {LEAR.png},
+code = {https://github.com/ksoh97/LEAR},
+bibtex_show = {true},
 selected = {true}
 }
 
@@ -275,6 +313,8 @@ location = {Birmingham, United Kingdom},
 series = {CIKM '23},
 annotation = {*: Both authors equally contributed to this work.},
 preview = {GMBA-overview.png},
+code = {https://github.com/ksoh97/GMBA},
+bibtex_show = {true},
 selected = {true}
 }
 
@@ -289,6 +329,9 @@ selected = {true}
   abstract = {Unsupervised Domain Adaptation (UDA), which transfers the learned knowledge from a labeled source domain to an unlabeled target domain, has been widely utilized in various medical image analysis approaches. Recent advances in UDA have shown that manipulating the frequency domain between source and target distributions can significantly alleviate the domain shift problem. However, a potential drawback of these methods is the loss of semantic information in the low-frequency spectrum, which can make it difficult to consider semantic information across the entire frequency spectrum. To deal with this problem, we propose a frequency mixup manipulation that utilizes the overall semantic information of the frequency spectrum in brain disease identification. In the first step, we perform self-adversarial disentangling based on frequency manipulation to pretrain the model for intensity-invariant feature extraction. Then, we effectively align the distributions of both the source and target domains by using mixed-frequency domains. In the extensive experiments on ADNI and AIBL datasets, our proposed method achieved outstanding performance over other UDA-based approaches in medical image classification.},
   pdf = {https://link.springer.com/chapter/10.1007/978-3-031-47665-5_11},
   additional_info   = {. Oral Presentation},
+  preview = {FMM-overview.png},
+  code = {https://github.com/ku-milab/FMM},
+  bibtex_show = {true},
   organization={Springer}
 }
 
@@ -302,6 +345,9 @@ selected = {true}
   additional_info   = {. JCR-IF: 7.4, Neuroimaging: 2/14},
   month = June,
   pdf={https://www.sciencedirect.com/science/article/pii/S1053811923002197},
+  preview = {xadlime-overview.png},
+  code = {https://github.com/ku-milab/XADLiME},
+  bibtex_show = {true},
   year={2023},
   publisher={Elsevier}
 }
@@ -312,6 +358,8 @@ selected = {true}
   author={Oh, Kwanseok and Heo, Da-Woon and Mulyadi, Ahmad Wisnu and Jung, Wonsik and Kang, Eunsong and Suk, Heung-Il},
   booktitle={Medical Imaging meets NeurIPS},
   pdf={https://www.cse.cuhk.edu.hk/~qdou/public/medneurips2022/80.pdf},
+  preview = {QECG_medneurips-overview.png},
+  bibtex_show = {true},
   location = {New Orleans, U.S.A},
   year={2022}
 }
@@ -325,6 +373,8 @@ selected = {true}
   pages={2},
   booktitle={Medical Imaging meets NeurIPS},
   pdf={http://www.cse.cuhk.edu.hk/~qdou/public/medneurips2022/22.pdf},
+  preview = {CPL_medneurips-overview.png},
+  bibtex_show = {true},
   location = {New Orleans, U.S.A},
   additional_info   = {. Oral Presentation},
   year={2022}
@@ -340,6 +390,7 @@ selected = {true}
   pdf={https://link.springer.com/chapter/10.1007/978-3-031-16443-9_32},
   location = {Singapore},
   preview = {kkn-overview.png},
+  bibtex_show = {true},
   organization={Springer}
 }
 
@@ -352,5 +403,7 @@ selected = {true}
   year={2020},
   pdf={https://ieeexplore.ieee.org/abstract/document/9061668?casa_token=FEWtii39SlYAAAAA:JqK0NflagrFlxlJ8ih4b6nt3VMH0H4WXfZVPXpTb3OdeP7bW6R6vI8uID_TZ5qBlRjZu-I_5MA},
   preview = {Vignet-overview.png},
+  code = {https://github.com/ksoh97/VIGNet},
+  bibtex_show = {true},
   organization={IEEE}
 }
