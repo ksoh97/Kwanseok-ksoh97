@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+   /* 학회 배지(abbr) 글자색을 흰색으로 */
+   div.abbr abbr,
+   div.abbr span,
+   div.abbr a {
+     color: #ffffff !important;
+   }
