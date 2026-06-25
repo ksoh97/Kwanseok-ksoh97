@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
-/* 학회 배지 칸 안의 모든 글자를 흰색으로 */
-.abbr,
-.abbr * {
+/* 학회 배지 글자색 흰색으로 (색 있는 배지의 안쪽 div까지) */
+abbr.badge,
+abbr.badge *,
+abbr.badge div {
   color: #ffffff !important;
 }
