@@ -12,6 +12,39 @@ pages={1583-1609},
 keywords={Data models;Brain modeling;Medical services;Predictive models;Medical diagnostic imaging;Analytical models;Magnetic resonance imaging;Deep learning;Biomedical imaging;Image analysis;Training data;Deep learning (DL);domain generalization (DG);medical image analysis (MedIA);out-of-distribution (OOD)},
 doi={10.1109/JPROC.2024.3507831}}
 
+@article{OH2026Seg,
+abbr = {PR},
+title = {Transferring ultrahigh-field representations for intensity-guided brain segmentation of low-field magnetic resonance imaging},
+journal = {Pattern Recognition},
+volume = {178},
+pages = {113364},
+year = {2026},
+issn = {0031-3203},
+doi = {https://doi.org/10.1016/j.patcog.2026.113364},
+url = {https://www.sciencedirect.com/science/article/pii/S0031320326003298},
+author = {Kwanseok Oh and Jieun Lee and Da-Woon Heo and Dinggang Shen and Heung-Il Suk},
+keywords = {Ultrahigh-Field MRI, Knowledge transfer, Adaptive fusion, Brain tissue & whole brain segmentation},
+abstract = {Ultrahigh-field (UHF) magnetic resonance imaging (MRI), 7T MRI, provides superior anatomical details of internal brain structures thanks to its enhanced signal-to-noise ratio and susceptibility-induced contrast. However, the widespread use of 7T MRI is limited by its high cost and lower accessibility compared to low-field (LF) MRI. This study proposes a SegUHF that systematically fuses the input LF MRI feature representations with the inferred 7T-like feature representations for brain image segmentation tasks in a 7T-absent environment. Specifically, our proposed adaptive fusion module within the SegUHF aggregates 7T-like features derived from the LF image using a pre-trained network and then refines them to effectively assimilate UHF guidance into LF image features. Using intensity-guided features obtained from such aggregation and assimilation, segmentation models can recognize subtle structural representations that are usually difficult to identify when relying only on LF features. Beyond these advantages, this strategy can be seamlessly utilized by modulating the contrast of LF features in alignment with UHF guidance, even when employing arbitrary segmentation models. Extensive experiments demonstrated that our method outperformed all baselines in both brain tissue and whole-brain segmentation, while also showcasing adaptability and scalability across various models and tasks. Code is available at https://github.com/ku-milab/UHF-guided_segmentation},
+preview = {FIESTA-overview.png},
+google_scholar_id = {JV2RwH3_ST0C},
+selected = {true}
+}
+
+@ARTICLE{oh2026FIESTA,
+  abbr = {IEEE TNNLS},
+  author={Oh, Kwanseok and Jeon, Eunjin and Heo, Da-Woon and Shin, Yooseung and Suk, Heung-Il},
+  journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+  title={FIESTA: Fourier-Based Semantic Augmentation With Uncertainty Guidance for Enhanced Domain Generalizability in Medical Image Segmentation}, 
+  year={2026},
+  volume={37},
+  number={3},
+  pages={1063-1077},
+  preview = {FIESTA-overview.png},
+  google_scholar_id = {TQgYirikUcIC},
+  keywords={Image segmentation;Magnetic resonance imaging;Semantics;Computed tomography;Fats;Biomedical imaging;Uncertainty;Data models;Adaptation models;Training;Fourier-based semantic augmentation;medical image segmentation (MIS);single-source domain generalization (SDG);uncertainty guidance (UG)},
+  doi={10.1109/TNNLS.2025.3620853},
+  selected = {true}
+}
 
 @inproceedings{maeng2023GMBA,
 abbr = {CIKM},
