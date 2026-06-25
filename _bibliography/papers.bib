@@ -1,20 +1,29 @@
 ---
 ---
 
-@article{yoon2024DG,
-abbr = {Proc. IEEE},
-author={Yoon, Jee Seok and Oh, Kwanseok and Shin, Yooseung and Mazurowski, Maciej A. and Suk, Heung-Il},
-journal={Proceedings of the IEEE}, 
-title={Domain Generalization for Medical Image Analysis: A Review}, 
-year={2024},
-volume={112},
-number={10},
-pages={1583-1609},
-additional_info   = {. JCR-IF: 23.2, Engineering, Electrical & Electronic 2/353},
-pdf = {https://ieeexplore.ieee.org/document/10780969},
-keywords={Data models;Brain modeling;Medical services;Predictive models;Medical diagnostic imaging;Analytical models;Magnetic resonance imaging;Deep learning;Biomedical imaging;Image analysis;Training data;Deep learning (DL);domain generalization (DG);medical image analysis (MedIA);out-of-distribution (OOD)},
-abstract = {Medical image analysis (MedIA) has become an essential tool in medicine and healthcare, aiding in disease diagnosis, prognosis, and treatment planning, and recent successes in deep learning (DL) have made significant contributions to its advances. However, deploying DL models for MedIA in real-world situations remains challenging due to their failure to generalize across the distributional gap between training and testing samples—a problem known as domain shift. Researchers have dedicated their efforts to developing various DL methods to adapt and perform robustly on unknown and out-of-distribution (OOD) data distributions. This article comprehensively reviews domain generalization (DG) studies specifically tailored for MedIA. We provide a holistic view of how DG techniques interact within the broader MedIA system, going beyond methodologies to consider the operational implications on the entire MedIA workflow. Specifically, we categorize DG methods into data-level, feature-level, model-level, and analysis-level methods. We show how those methods can be used in various stages of the MedIA workflow with DL equipped from data acquisition to model prediction and analysis. Furthermore, we critically analyze the strengths and weaknesses of various methods, unveiling future research opportunities.},
-doi={10.1109/JPROC.2024.3507831}}
+@article{yang2026topbrain,
+  abbr = {arXiv},
+  title={TopBrain segmentation challenge for whole brain vessel anatomy},
+  author={Kaiyuan Yang, Pengcheng Shi, Houjing Huang, Fabio Musio, Hakim Baazaoui, Orhun Utku Aydin, Adam Hilbert, Rachika E. Hamadache, Cansu Yalcin, Minghui Zhang, Daniele Falcetta, Ezequiel de la Rosa, Suprosanna Shit, Chinmay Prabhakar, Bastian Wittmann, Maximilian R. Rokuss, Yannick Kirchhoff, Rami Al-Maskari, Luciano Höher, Norman Juchler, Adrià Casamitjana, Jon Cleary, Anton Schmick, Philipp Baumgartner, Julian Deseö, Olafs Vandans, Dahye Lee, Kwanseok Oh, Dominic LaBella, Moona Mazher, Steven A. Niederer, Abdul Qayyum, Yaoyu Liu, Junqiang Chen, Wooseung Kim, Napasara Asawalertsak, Minjae Kim, Dongho Shin, Sung-Hong Park, Shunsuke Kikuchi, Yaqing Zhang, Jialu Liu, Yue Cui, Yuchen Qiu, Anouk Verschuur, Jiaxin Zhang, Irene van der Schaaf, Ruisheng Su, Chantal M.W. Tax, Yosuke Yamagishi, Nishta Letchumanan, Shouhei Hanaoka, Jesús González, Riccardo Tiberi, Clara Lisazo, Valeriia Abramova, Uma Maria Lal-Trehan Estrada, Agustin Cartaya Lathulerie, Micaela Rivas Díaz, Arnau Oliver, Menghan Zhang, Zhiqiang Bai and others},
+  journal={medRxiv},
+  pages={2026--05},
+  year={2026},
+  annotation = {Contributing author, TopBrain Segmentation Challenge, as a top-ranked participant invited to co-author the official challenge benchmark paper.},
+  abstract = {The Circle of Willis (CoW) is an important network of arteries connecting major circulations of the brain. Its vascular architecture is believed to affect the risk, severity, and clinical outcome of serious neurovascular diseases. However, characterizing the highly variable CoW anatomy is still a manual and time-consuming expert task. The CoW is usually imaged by two non-invasive angiographic imaging modalities, magnetic resonance angiography (MRA) and computed tomography angiography (CTA), but there exist limited datasets with annotations on CoW anatomy, especially for CTA. Therefore, we organized the TopCoW challenge with the release of an annotated CoW dataset. The TopCoW dataset is the first public dataset with voxel-level annotations for 13 CoW vessel components, enabled by virtual reality technology. It is also the first large dataset using 200 pairs of MRA and CTA from the same patients. As part of the benchmark, we invited submissions worldwide and attracted over 250 registered participants from six continents. The submissions were evaluated on both internal and external test datasets of 226 scans from over five centers. The top performing teams achieved over 90% Dice scores at segmenting the CoW components, over 80% F1 scores at detecting key CoW components, and over 70% balanced accuracy at classifying CoW variants for nearly all test sets. The best algorithms also showed clinical potential in classifying fetal-type posterior cerebral artery and locating aneurysms with CoW anatomy. TopCoW demonstrated the utility and versatility of CoW segmentation algorithms for a wide range of downstream clinical applications with explainability. The annotated datasets and best performing algorithms have been released as public Zenodo records to foster further methodological development and clinical tool building.},
+  publisher={Cold Spring Harbor Laboratory Press}
+}
+
+@article{yang2025benchmarking,
+  abbr = {NEJM AI},
+  title={Benchmarking the cow with the topcow challenge: Topology-aware anatomical segmentation of the circle of willis for cta and mra},
+  author={Kaiyuan Yang, Fabio Musio, Yihui Ma, Norman Juchler, Johannes C. Paetzold, Rami Al-Maskari, Luciano Höher, Hongwei Bran Li, Ibrahim Ethem Hamamci, Anjany Sekuboyina, Suprosanna Shit, Houjing Huang, Chinmay Prabhakar, Ezequiel de la Rosa, Bastian Wittmann, Diana Waldmannstetter, Florian Kofler, Fernando Navarro, Martin Menten, Ivan Ezhov, Daniel Rueckert, Iris N. Vos, Ynte M. Ruigrok, Birgitta K. Velthuis, Hugo J. Kuijf, Pengcheng Shi, Wei Liu, Ting Ma, Maximilian R. Rokuss, Yannick Kirchhoff, Fabian Isensee, Klaus Maier-Hein, Chengcheng Zhu, Huilin Zhao, Philippe Bijlenga, Julien Hämmerli, Catherine Wurster, Laura Westphal, Jeroen Bisschop, Elisa Colombo, Hakim Baazaoui, Hannah-Lea Handelsmann, Andrew Makmur, James Hallinan, Amrish Soundararajan, Bene Wiestler, Jan S. Kirschke, Roland Wiest, Emmanuel Montagnon, Laurent Letourneau-Guillon, Kwanseok Oh, Dahye Lee, Adam Hilbert, Orhun Utku Aydin, Dimitrios Rallios, Jana Rieger, Satoru Tanioka, Alexander Koch, Dietmar Frey, Abdul Qayyum, Moona Mazher, Steven Niederer, Nico Disch, Julius Holzschuh, Dominic LaBella, Francesco Galati, Daniele Falcetta, Maria A. Zuluaga, Chaolong Lin, Haoran Zhao, Zehan Zhang, Minghui Zhang, Xin You, Hanxiao Zhang, Guang-Zhong Yang, Yun Gu, Sinyoung Ra, Jongyun Hwang, Hyunjin Park, Junqiang Chen, Marek Wodzinski, Henning Müller, Nesrin Mansouri, Florent Autrusseau, Cansu Yalçin, Rachika E. Hamadache, Clara Lisazo, Joaquim Salvi, Adrià Casamitjana, Xavier Lladó, Uma Maria Lal-Trehan Estrada, Valeriia Abramova, Luca Giancardo, Arnau Oliver, Paula Casademunt, Adrian Galdran, Matteo Delucchi, Jialu Liu, Haibin Huang, Yue Cui, and others},
+  journal={NEJM AI},
+  pdf={https://pmc.ncbi.nlm.nih.gov/articles/PMC10793481/pdf/nihpp-2312.17670v3.pdf},
+  annotation = {Contributing author, Benchmarking the CoW with the TopCoW Challenge, as a top-ranked participant invited to co-author the official challenge benchmark paper.},
+  abstract = {The Circle of Willis (CoW) is an important network of arteries connecting major circulations of the brain. Its vascular architecture is believed to affect the risk, severity, and clinical outcome of serious neurovascular diseases. However, characterizing the highly variable CoW anatomy is still a manual and time-consuming expert task. The CoW is usually imaged by two non-invasive angiographic imaging modalities, magnetic resonance angiography (MRA) and computed tomography angiography (CTA), but there exist limited datasets with annotations on CoW anatomy, especially for CTA. Therefore, we organized the TopCoW challenge with the release of an annotated CoW dataset. The TopCoW dataset is the first public dataset with voxel-level annotations for 13 CoW vessel components, enabled by virtual reality technology. It is also the first large dataset using 200 pairs of MRA and CTA from the same patients. As part of the benchmark, we invited submissions worldwide and attracted over 250 registered participants from six continents. The submissions were evaluated on both internal and external test datasets of 226 scans from over five centers. The top performing teams achieved over 90% Dice scores at segmenting the CoW components, over 80% F1 scores at detecting key CoW components, and over 70% balanced accuracy at classifying CoW variants for nearly all test sets. The best algorithms also showed clinical potential in classifying fetal-type posterior cerebral artery and locating aneurysms with CoW anatomy. TopCoW demonstrated the utility and versatility of CoW segmentation algorithms for a wide range of downstream clinical applications with explainability. The annotated datasets and best performing algorithms have been released as public Zenodo records to foster further methodological development and clinical tool building.},
+  pages={arXiv--2312},
+  year={2026}
+}
 
 @inproceedings{lee2026hiram,
 abbr = {MICCAI},
@@ -40,7 +49,7 @@ selected = {true}
 }
 
 @article{OH2026Seg,
-abbr = {PR},
+abbr = {Pattern Recognit.},
 title = {Transferring ultrahigh-field representations for intensity-guided brain segmentation of low-field magnetic resonance imaging},
 journal = {Pattern Recognition},
 additional_info   = {. JCR-IF: 7.6, Engineering, Electrical & Electronic: 33/368},
@@ -121,6 +130,21 @@ preview = {LiCoL-overview.png},
 pdf = {https://www.sciencedirect.com/science/article/pii/S1053811925000795},
 selected = {true}
 }
+
+@article{yoon2024DG,
+abbr = {Proc. IEEE},
+author={Yoon, Jee Seok and Oh, Kwanseok and Shin, Yooseung and Mazurowski, Maciej A. and Suk, Heung-Il},
+journal={Proceedings of the IEEE}, 
+title={Domain Generalization for Medical Image Analysis: A Review}, 
+year={2024},
+volume={112},
+number={10},
+pages={1583-1609},
+additional_info   = {. JCR-IF: 23.2, Engineering, Electrical & Electronic 2/353},
+pdf = {https://ieeexplore.ieee.org/document/10780969},
+keywords={Data models;Brain modeling;Medical services;Predictive models;Medical diagnostic imaging;Analytical models;Magnetic resonance imaging;Deep learning;Biomedical imaging;Image analysis;Training data;Deep learning (DL);domain generalization (DG);medical image analysis (MedIA);out-of-distribution (OOD)},
+abstract = {Medical image analysis (MedIA) has become an essential tool in medicine and healthcare, aiding in disease diagnosis, prognosis, and treatment planning, and recent successes in deep learning (DL) have made significant contributions to its advances. However, deploying DL models for MedIA in real-world situations remains challenging due to their failure to generalize across the distributional gap between training and testing samples—a problem known as domain shift. Researchers have dedicated their efforts to developing various DL methods to adapt and perform robustly on unknown and out-of-distribution (OOD) data distributions. This article comprehensively reviews domain generalization (DG) studies specifically tailored for MedIA. We provide a holistic view of how DG techniques interact within the broader MedIA system, going beyond methodologies to consider the operational implications on the entire MedIA workflow. Specifically, we categorize DG methods into data-level, feature-level, model-level, and analysis-level methods. We show how those methods can be used in various stages of the MedIA workflow with DL equipped from data acquisition to model prediction and analysis. Furthermore, we critically analyze the strengths and weaknesses of various methods, unveiling future research opportunities.},
+doi={10.1109/JPROC.2024.3507831}}
 
 @article{oh2023LEAR,
 abbr = {IEEE TPAMI},
